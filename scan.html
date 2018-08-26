@@ -19,7 +19,7 @@
 	</div>
 
 
-<div id="mainbody" style="display: none;"> 
+<div id="mainbody" style="display: inline;"> 
 <table class="tsel" width="100%" border="0">
 	<tbody>
 		<tr>
@@ -35,17 +35,20 @@
 						</td>
 					</tr>
 					<tr>
-						<td colspan="2" align="center">
+						<td colspan="3" align="center">
+								<div id="outdiv">
+								<div class="embed-responsive embed-responsive-16by9">
+									<video class="embed-responsive-item" autoplay="true" id="a" allowfullscreen>ss</video>
+								</div>		
+								</div>
 								
-								<div class="embed-responsive embed-responsive-4by3">
-									<video class="embed-responsive-item" autoplay="true" id="a" >ss</video>
-								</div>	
 
 						</td>
 					</tr>
 					<tr>
 			<td>
 				<a href="result.html"><button type="button" class="btn btn-outline-success btn-lg" align="right">Consultar</button></a>
+				
 			</td>
 		</tr>
 				</tbody>
@@ -53,10 +56,20 @@
 		</td>
 		</tr>
 	</tbody>
-</table>	
+</table>
+
 </div>
 
-	<br></br>
+
+	<footer class="footer">
+	<div class="container">			
+		<h3 id="t">Atencion!!</h3>
+		<h5 id="t">Esta aplicacion no fomenta la automedicacion </h5>	
+	</div>
+	
+</footer>
+
+
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -67,13 +80,5 @@
 
  <script type="text/javascript"> navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia; if(navigator.getUserMedia){ navigator.getUserMedia({video: true}, handleVideo,videoError); } function handleVideo(stream){ document.querySelector('#a').src = window.URL.createObjectURL(stream); } function videoError(e){ alert(e); } </script>
 </body>	
-<footer class="footer">
-	<br>
-	<div class="container">			
-		<h3 id="t">Atencion!!</h3>
-		<h5 id="t">Esta aplicacion no fomenta la automedicacion </h5>	
-	</div>
-	
-</footer>
   	
 </html>
