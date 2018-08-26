@@ -1,5 +1,39 @@
 #mainbody {
+
     background: white;
     width: 100%;
     display: none;
+}
+.tsel {
+	top: 70px; left: 0px;
+	position: relative;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.selector {
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: -5px;
+}
+#webcamimg{
+	width: 52px;
+	height: 42px;
+}
+#qrimg{
+	width: 52px;
+	height: 42px;
+}
+#outdiv {
+    width: 320px;
+    height: 240px;
+    border: solid;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 3px 3px 3px 3px;
 }

@@ -7,19 +7,45 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 		<link rel="stylesheet" type="text/css" href="css/miEstilo.css">
+		<link rel="stylesheet" type="text/css" href="css/scann.css">
 
 		<title>Scann</title>
 	</head>
-<body>		
+<body>	
+	
 	<div class="secciones">
 		<img id="lg" src="img/mediscann.png">
 	</div>
-	
-
 
 
 <div id="mainbody" style="display: inline;"> 
-	
+<table class="tsel" width="100%" border="0">
+	<tbody>
+		<tr>
+		<td width="50%" valign="top" align="center">
+			<table class="tsel" border="0">
+				<tbody>
+					<tr>
+						<td>
+							<img id="webcamimg" class="selector" src="img/video.png" onclick="setwebcam()" style="opacity: 1;" align="left">
+						</td>
+						<td>
+							<img id="qrimg" class="selector" src="img/foto.png" onclick="setimg()" style="opacity: 0.2;" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<div id="outdiv">
+								<video id="video" autoplay=""></video>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</td>
+		</tr>
+	</tbody>
+</table>	
 </div>
 
 
